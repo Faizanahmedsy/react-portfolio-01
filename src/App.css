@@ -4,7 +4,7 @@
 
 /* <a href="https://www.freepik.com/free-photo/vivid-blurred-colorful-background_16618863.htm#query=gradient%20background&position=0&from_view=keyword&track=ais">Image by user3802032</a> on Freepik */
 
-body {
+/* body { */
   /* background: rgb(159, 236, 254);
   background: linear-gradient(
     90deg,
@@ -15,6 +15,6 @@ body {
   /* background-image: url(assets/vivid-blurred-colorful-background.jpg);
   background-size: cover; */
 
-  background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
-}
+  /* background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%); */
+/* } */

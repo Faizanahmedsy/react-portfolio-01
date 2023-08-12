@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero/Hero";
+import Hero from "./Hero/Hero";
+import About from "../About";
 
 const Layout = () => {
   return (

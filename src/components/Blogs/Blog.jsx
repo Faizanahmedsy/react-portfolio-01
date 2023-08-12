@@ -2,8 +2,10 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
+    <>
+      <div style={{height: "90vh"}}>Blog</div>
+    </>
+  );
 }
 
 export default Blog

@@ -1,4 +1,4 @@
-import { Col, FloatButton, Row, Tag } from "antd";
+import { Button, Col, FloatButton, Row, Tag } from "antd";
 import {
   GithubOutlined,
   LinkOutlined,
@@ -21,6 +21,10 @@ const NavBar = () => {
           // color: "white",
           display: "flex",
           alignItems: "center",
+          position: "fixed",
+          zIndex: "1",
+          overflow: "hidden",
+          bottom: "0",  
         }}
       >
         <Col
@@ -46,6 +50,8 @@ const NavBar = () => {
               borderRadius: "50px",
               padding: "10px",
               fontSize: "15px",
+              cursor: "pointer",
+              userSelect: "none",
             }}
             onClick={() => nav("/")}
           >
@@ -57,6 +63,8 @@ const NavBar = () => {
               borderRadius: "50px",
               padding: "10px",
               fontSize: "15px",
+              cursor: "pointer",
+              userSelect: "none",
             }}
             onClick={() => {
               nav("/myprojects");
@@ -64,23 +72,29 @@ const NavBar = () => {
           >
             Projects
           </Tag>
+
           <Tag
             color="geekblue"
             style={{
               borderRadius: "50px",
               padding: "10px",
               fontSize: "15px",
+              cursor: "pointer",
+              userSelect: "none",
             }}
             onClick={() => nav("/blog")}
           >
             Blogs
           </Tag>
+
           <Tag
             color="volcano"
             style={{
               borderRadius: "50px",
               padding: "10px",
               fontSize: "15px",
+              cursor: "pointer",
+              userSelect: "none",
             }}
           >
             Story

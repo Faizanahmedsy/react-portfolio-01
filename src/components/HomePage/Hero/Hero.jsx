@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import { Card } from "antd";
 
 const Hero = () => {
   return (
@@ -8,8 +9,9 @@ const Hero = () => {
         style={{
           display: "grid",
           placeItems: "center",
-          height: "90vh",
+          height: "100vh",
         }}
+        className="first-section"
       >
         <div>
           <div className="waviy">
@@ -47,6 +49,30 @@ const Hero = () => {
               </div>
             </section>
           </main>
+        </div>
+      </section>
+
+      <section className="second-section">
+        <div className="words word-1">
+          <span>C</span>
+          <span>O</span>
+          <span>D</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+          {/* <span>N</span> */}
+        </div>
+
+        <div className="words word-2">
+          <span>I</span>
+          <span>S</span>
+        </div>
+
+        <div className="words word-3">
+          <span>l</span>
+          <span>O</span>
+          <span>v</span>
+          <span>e</span>
         </div>
       </section>
     </>
