@@ -1,4 +1,3 @@
-import { Typography } from "antd";
 import React from "react";
 import "./Hero.css";
 
@@ -26,9 +25,6 @@ const Hero = () => {
             <span style={{ "--i": 10 }}> e </span>
             <span style={{ "--i": 11 }}> d </span>
           </div>
-          {/* <Typography.Text classNameNameName="f_lexend">
-            Front End Developer
-          </Typography.Text> */}
 
           <main className="_container">
             <p

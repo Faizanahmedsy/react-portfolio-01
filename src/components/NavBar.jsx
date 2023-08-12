@@ -1,6 +1,15 @@
-import { Button, Col, Row, Tag } from "antd";
+import { Col, FloatButton, Row, Tag } from "antd";
+import {
+  GithubOutlined,
+  LinkOutlined,
+  LinkedinOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const nav = useNavigate();
   return (
     <>
       <Row
@@ -38,6 +47,7 @@ const NavBar = () => {
               padding: "10px",
               fontSize: "15px",
             }}
+            onClick={() => nav("/")}
           >
             Home
           </Tag>
@@ -47,6 +57,9 @@ const NavBar = () => {
               borderRadius: "50px",
               padding: "10px",
               fontSize: "15px",
+            }}
+            onClick={() => {
+              nav("/myprojects");
             }}
           >
             Projects
@@ -58,8 +71,9 @@ const NavBar = () => {
               padding: "10px",
               fontSize: "15px",
             }}
+            onClick={() => nav("/blog")}
           >
-            Profile
+            Blogs
           </Tag>
           <Tag
             color="volcano"
@@ -81,11 +95,58 @@ const NavBar = () => {
             paddingRight: "30px",
           }}
         >
-          Contact
+          <FloatButton.Group
+            trigger="hover"
+            icon={<LinkOutlined />}
+            style={{
+              bottom: "20px",
+            }}
+          >
+            <FloatButton
+              icon={<LinkedinOutlined />}
+              tooltip={"LinkedIn"}
+              href="https://www.linkedin.com/in/faizanahmed-saiyed/"
+            />
+            <FloatButton
+              icon={<GithubOutlined />}
+              tooltip={"Github"}
+              href="https://github.com/Faizanahmedsy"
+            />
+            <FloatButton
+              icon={<MailOutlined />}
+              tooltip={"Email"}
+              href="mailto:saiyed.faizanahmed1@gmail.com"
+            />
+          </FloatButton.Group>
         </Col>
       </Row>
     </>
   );
 };
+
+export function SocialsIcon() {
+  return (
+    <div
+      style={{
+        display: "grid",
+        placeItems: "center",
+      }}
+    >
+      <img
+        src="https://api.iconify.design/dashicons/admin-links.svg?width=25"
+        alt=""
+      />
+    </div>
+  );
+}
+
+export function LinkedInIcon() {
+  return (
+    <img
+      src="https://api.iconify.design/tabler/brand-linkedin.svg?width=25"
+      alt=""
+    />
+  );
+}
 
 export default NavBar;

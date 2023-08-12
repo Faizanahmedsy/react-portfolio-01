@@ -1,19 +1,23 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero/Hero";
 import About from "./components/About";
 import MyProjects from "./components/MyProjects";
-import Footer from "./components/Footer";
+import Layout from "./Layout";
+import NoPage from "./components/NoPage";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Blog from "./components/Blogs/Blog";
 
 function App() {
   return (
     <>
-      <Hero />
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="about" element={<About />} />
+        <Route path="myprojects" element={<MyProjects />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
       <NavBar />
-
-      {/* <About />
-      <MyProjects />
-      <Footer /> */}
     </>
   );
 }
