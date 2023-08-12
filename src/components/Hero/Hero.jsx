@@ -9,12 +9,10 @@ const Hero = () => {
         style={{
           display: "grid",
           placeItems: "center",
-          height: "92vh",
+          height: "90vh",
         }}
       >
         <div>
-          {/* <Typography.Title id='title'>Faizanahmed</Typography.Title> */}
-
           <div className="waviy">
             <span style={{ "--i": 1 }}> F </span>
             <span style={{ "--i": 2 }}> a </span>
@@ -27,27 +25,26 @@ const Hero = () => {
             <span style={{ "--i": 9 }}> m </span>
             <span style={{ "--i": 10 }}> e </span>
             <span style={{ "--i": 11 }}> d </span>
-
-            {/* <span style="--i:2">o</span>
-            <span style="--i:3">a</span>
-            <span style="--i:4">d</span>
-            <span style="--i:5">i</span>
-            <span style="--i:6">n</span>
-            <span style="--i:7">g</span>
-            <span style="--i:8">.</span> */}
           </div>
           {/* <Typography.Text classNameNameName="f_lexend">
             Front End Developer
           </Typography.Text> */}
 
           <main className="_container">
-            <p> I'm</p>
+            <p
+              style={{
+                marginTop: "0",
+              }}
+            >
+              I'm
+            </p>
+
             <section className="_animation">
               <div className="_first">
                 <div>Frontend Developer</div>
               </div>
               <div className="_second">
-                <div>Cs Sophmore</div>
+                <div>Cs Sophomore</div>
               </div>
               <div className="_third">
                 <div>Tech enthusiast</div>
