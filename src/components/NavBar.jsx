@@ -5,7 +5,8 @@ const NavBar = () => {
     <>
       <Row
         style={{
-          // backgroundColor: "black",
+          // backgroundColor: "white",
+          backgroundColor: "rgba(255,255,255,0.4)",
           width: "100%",
           height: "8vh",
           // color: "white",
@@ -18,8 +19,9 @@ const NavBar = () => {
           style={{
             paddingLeft: "20px",
           }}
+          className="f_lexend"
         >
-          Faizanahmed
+          Made with 💛 by faizan
         </Col>
         <Col
           md={8}

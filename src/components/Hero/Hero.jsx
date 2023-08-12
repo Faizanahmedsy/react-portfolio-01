@@ -36,9 +36,24 @@ const Hero = () => {
             <span style="--i:7">g</span>
             <span style="--i:8">.</span> */}
           </div>
-          <Typography.Text className="f_lexend">
+          {/* <Typography.Text classNameNameName="f_lexend">
             Front End Developer
-          </Typography.Text>
+          </Typography.Text> */}
+
+          <main className="_container">
+            <p> I'm</p>
+            <section className="_animation">
+              <div className="_first">
+                <div>Frontend Developer</div>
+              </div>
+              <div className="_second">
+                <div>Cs Sophmore</div>
+              </div>
+              <div className="_third">
+                <div>Tech enthusiast</div>
+              </div>
+            </section>
+          </main>
         </div>
       </section>
     </>

@@ -16,15 +16,12 @@
   font-family: "Lexend", sans-serif;
 }
 
-
-
-
-
 /* //.waviy animation https://codepen.io/alvarotrigo/pen/bGrXmwM */
 .waviy {
   position: relative;
   font-family: "Lexend", sans-serif;
 }
+
 .waviy span {
   font-weight: bold;
   position: relative;
@@ -32,14 +29,106 @@
   font-size: 40px;
   color: #0f0101;
   /* text-transform: uppercase; */
-  animation: flip 4s infinite;
+  animation: flip 4s 4;
   /* animation: flip 3s infinite; */
   animation-delay: calc(0.2s * var(--i));
   /* animation-delay: calc(0.7s * var(--i));//better animation effect */
 }
+/* 
 @keyframes flip {
   0%,
   80% {
     transform: rotateY(360deg);
+  }
+} */
+
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+._container {
+  font-family: "lexend", sans-serif;
+  /* color: #e5e5e5; */
+  font-size: 1.26rem;
+  text-transform: uppercase;
+  /* height: 100vh; */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+._animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+._animation > div > div {
+  /* padding: 0.25rem 0.75rem; */
+  padding: 0px 20px;
+  /* height: 2.81rem; */
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+._animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+._first div {
+  background-color: #00fff7;
+  border-radius: 100px;
+}
+
+._second div {
+  background-color: #ddff04d5;
+  border-radius: 100px;
+}
+
+._third div {
+  background-color: #ffdadf;
+  border-radius: 100px;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -4.5rem;
+  }
+
+  30% {
+    margin-top: -4.5rem;
+  }
+
+  40% {
+    margin-top: -9.24rem;
+  }
+
+  60% {
+    margin-top: -9.24rem;
+  }
+
+  70% {
+    margin-top: -4.5rem;
+  }
+
+  80% {
+    margin-top: -4.5rem;
+  }
+
+  90% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: 0;
   }
 }
