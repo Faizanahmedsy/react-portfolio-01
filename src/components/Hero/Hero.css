@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@400;600&family=Oswald:wght@500&family=Poppins&display=swap");
+
+/* #title{
+    font-family: 'Lexend', sans-serif;
+} */
+
+#title {
+  font-family: "Lexend", sans-serif;
+}
+
+.ant-tag {
+  font-family: "Lexend", sans-serif;
+}
+
+.f_lexend {
+  font-family: "Lexend", sans-serif;
+}
+
+
+
+
+
+/* //.waviy animation https://codepen.io/alvarotrigo/pen/bGrXmwM */
+.waviy {
+  position: relative;
+  font-family: "Lexend", sans-serif;
+}
+.waviy span {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #0f0101;
+  /* text-transform: uppercase; */
+  animation: flip 4s infinite;
+  /* animation: flip 3s infinite; */
+  animation-delay: calc(0.2s * var(--i));
+  /* animation-delay: calc(0.7s * var(--i));//better animation effect */
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
