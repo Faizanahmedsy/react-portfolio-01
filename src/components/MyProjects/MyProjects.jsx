@@ -5,9 +5,12 @@ const MyProjects = () => {
     <div
       style={{
         height: "90vh",
+        display: "flex",
+       justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      MyProjects
+      Comming Soon ...
     </div>
   );
 };
