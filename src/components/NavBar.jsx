@@ -16,6 +16,7 @@ const NavBar = () => {
         style={{
           // backgroundColor: "white",
           backgroundColor: "rgba(255,255,255,0.4)",
+          backdropFilter: "blur(3px)",
           width: "100%",
           height: "8vh",
           // color: "white",
@@ -24,7 +25,7 @@ const NavBar = () => {
           position: "fixed",
           zIndex: "1",
           overflow: "hidden",
-          bottom: "0",  
+          bottom: "0",
         }}
       >
         <Col
@@ -108,32 +109,33 @@ const NavBar = () => {
             alignItems: "center",
             paddingRight: "30px",
           }}
-        >
-          <FloatButton.Group
-            trigger="hover"
-            icon={<LinkOutlined />}
-            style={{
-              bottom: "20px",
-            }}
-          >
-            <FloatButton
-              icon={<LinkedinOutlined />}
-              tooltip={"LinkedIn"}
-              href="https://www.linkedin.com/in/faizanahmed-saiyed/"
-            />
-            <FloatButton
-              icon={<GithubOutlined />}
-              tooltip={"Github"}
-              href="https://github.com/Faizanahmedsy"
-            />
-            <FloatButton
-              icon={<MailOutlined />}
-              tooltip={"Email"}
-              href="mailto:saiyed.faizanahmed1@gmail.com"
-            />
-          </FloatButton.Group>
-        </Col>
+        ></Col>
       </Row>
+
+      {/* Keep this floating button out from the nav bar section, bechause if we do backgrouroud blur in navbar section, the floating icons will disappear, thats why, i am puting this below */}
+      <FloatButton.Group
+        trigger="hover"
+        icon={<LinkOutlined />}
+        style={{
+          bottom: "20px",
+        }}
+      >
+        <FloatButton
+          icon={<LinkedinOutlined />}
+          tooltip={"LinkedIn"}
+          href="https://www.linkedin.com/in/faizanahmed-saiyed/"
+        />
+        <FloatButton
+          icon={<GithubOutlined />}
+          tooltip={"Github"}
+          href="https://github.com/Faizanahmedsy"
+        />
+        <FloatButton
+          icon={<MailOutlined />}
+          tooltip={"Email"}
+          href="mailto:saiyed.faizanahmed1@gmail.com"
+        />
+      </FloatButton.Group>
     </>
   );
 };

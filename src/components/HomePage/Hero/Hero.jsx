@@ -1,18 +1,11 @@
 import React from "react";
 import "./Hero.css";
-import { Card } from "antd";
+import { Row, Typography } from "antd";
 
 const Hero = () => {
   return (
     <>
-      <section
-        style={{
-          display: "grid",
-          placeItems: "center",
-          height: "100vh",
-        }}
-        className="first-section"
-      >
+      <section className="first-section">
         <div>
           <div className="waviy">
             <span style={{ "--i": 1 }}> F </span>
@@ -28,7 +21,7 @@ const Hero = () => {
             <span style={{ "--i": 11 }}> d </span>
           </div>
 
-          <main className="_container">
+          <div className="_container">
             <p
               style={{
                 marginTop: "0",
@@ -39,7 +32,7 @@ const Hero = () => {
 
             <section className="_animation">
               <div className="_first">
-                <div>Frontend Developer</div>
+                <div>Frontend Dev</div>
               </div>
               <div className="_second">
                 <div>Cs Sophomore</div>
@@ -48,32 +41,19 @@ const Hero = () => {
                 <div>Tech enthusiast</div>
               </div>
             </section>
-          </main>
-        </div>
-      </section>
-
-      <section className="second-section">
-        <div className="words word-1">
-          <span>C</span>
-          <span>O</span>
-          <span>D</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
-          {/* <span>N</span> */}
+          </div>
         </div>
 
-        <div className="words word-2">
-          <span>I</span>
-          <span>S</span>
-        </div>
-
-        <div className="words word-3">
-          <span>l</span>
-          <span>O</span>
-          <span>v</span>
-          <span>e</span>
-        </div>
+        <p
+          style={{
+            position: "absolute",
+            bottom: "90px",
+            fontFamily: " 'lexend', sans-serif ",
+            fontSize: "1rem",
+          }}
+        >
+          React is my 🍞 and 🧈
+        </p>
       </section>
     </>
   );

@@ -1,11 +1,14 @@
 import React from "react";
 import Hero from "./Hero/Hero";
-import About from "../About";
+import AboutMe from "./AboutMe/AboutMe";
+import CoolSection from "../CoolSection/CoolSection";
 
 const Layout = () => {
   return (
     <>
       <Hero />
+      {/* <AboutMe /> */}
+      <CoolSection />
     </>
   );
 };
