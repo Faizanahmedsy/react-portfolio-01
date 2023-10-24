@@ -35,103 +35,34 @@ const MyProjects = () => {
 
       <Container>
         <Row gutter={[16, 16]}>
-          <Col span={12}>
-            <Tag
-              color="magenta"
-              style={{
-                width: "100%",
-                height: "100px",
-                padding: "1rem",
-                fontSize: "1rem",
-                fontWeight: "bold",
-              }}
-            >
-              <p
+          {/* ... (existing code) */}
+          {Array.from({ length: 4 }, (_, i) => (
+            <Col span={12} key={i}>
+              <Tag
+                color={i % 2 === 0 ? "magenta" : "red"}
                 style={{
                   width: "100%",
-                  margin: "0",
+                  height: "100px",
+                  padding: "1rem",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam{" "}
-                <br />
-                explicabo ipsum, cum quia perspiciatis dolores vero. <br />{" "}
-                Possimus explicabo porro at. qui?
-              </p>
-            </Tag>
-          </Col>
-          <Col span={12}>
-            <Tag
-              color="red"
-              style={{
-                width: "100%",
-                height: "100px",
-                padding: "1rem",
-                fontSize: "1rem",
-                fontWeight: "bold",
-              }}
-            >
-              <p
-                style={{
-                  width: "100%",
-                  margin: "0",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam{" "}
-                <br />
-                explicabo ipsum, cum quia perspiciatis dolores vero. <br />{" "}
-                Possimus explicabo porro at. qui?
-              </p>
-            </Tag>
-          </Col>
-
-          <Col span={12}>
-            <Tag
-              color="magenta"
-              style={{
-                width: "100%",
-                height: "100px",
-                padding: "1rem",
-                fontSize: "1rem",
-                fontWeight: "bold",
-              }}
-            >
-              <p
-                style={{
-                  width: "100%",
-                  margin: "0",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam{" "}
-                <br />
-                explicabo ipsum, cum quia perspiciatis dolores vero. <br />{" "}
-                Possimus explicabo porro at. qui?
-              </p>
-            </Tag>
-          </Col>
-          <Col span={12}>
-            <Tag
-              color="red"
-              style={{
-                width: "100%",
-                height: "100px",
-                padding: "1rem",
-                fontSize: "1rem",
-                fontWeight: "bold",
-              }}
-            >
-              <p
-                style={{
-                  width: "100%",
-                  margin: "0",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam{" "}
-                <br />
-                explicabo ipsum, cum quia perspiciatis dolores vero. <br />{" "}
-                Possimus explicabo porro at. qui?
-              </p>
-            </Tag>
-          </Col>
+                <p
+                  style={{
+                    wordWrap: "break-word",
+                    whiteSpace: "pre-line",
+                    width: "100%",
+                    margin: "0",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magnam explicabo ipsum, cum quia perspiciatis dolores vero.
+                  Possimus explicabo porro at. qui?
+                </p>
+              </Tag>
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>
