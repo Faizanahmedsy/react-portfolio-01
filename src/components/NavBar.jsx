@@ -9,6 +9,14 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const NAV_ITEM_STY = {
+    borderRadius: "50px",
+    padding: "10px",
+    fontSize: "15px",
+    cursor: "pointer",
+    userSelect: "none",
+  };
+
   const nav = useNavigate();
   return (
     <>
@@ -45,28 +53,15 @@ const NavBar = () => {
             alignItems: "center",
           }}
         >
-          <Tag
-            color="purple"
-            style={{
-              borderRadius: "50px",
-              padding: "10px",
-              fontSize: "15px",
-              cursor: "pointer",
-              userSelect: "none",
-            }}
-            onClick={() => nav("/")}
-          >
+          <Tag color="purple" style={NAV_ITEM_STY} onClick={() => nav("/")}>
             Home
+          </Tag>
+          <Tag color="gold" style={NAV_ITEM_STY} onClick={() => nav("/about")}>
+            About
           </Tag>
           <Tag
             color="magenta"
-            style={{
-              borderRadius: "50px",
-              padding: "10px",
-              fontSize: "15px",
-              cursor: "pointer",
-              userSelect: "none",
-            }}
+            style={NAV_ITEM_STY}
             onClick={() => {
               nav("/myprojects");
             }}
@@ -76,40 +71,17 @@ const NavBar = () => {
 
           <Tag
             color="geekblue"
-            style={{
-              borderRadius: "50px",
-              padding: "10px",
-              fontSize: "15px",
-              cursor: "pointer",
-              userSelect: "none",
-            }}
+            style={NAV_ITEM_STY}
             onClick={() => nav("/blog")}
           >
             Blogs
           </Tag>
 
-          <Tag
-            color="volcano"
-            style={{
-              borderRadius: "50px",
-              padding: "10px",
-              fontSize: "15px",
-              cursor: "pointer",
-              userSelect: "none",
-            }}
-          >
+          <Tag color="volcano" style={NAV_ITEM_STY}>
             Story
           </Tag>
         </Col>
-        <Col
-          md={8}
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-            paddingRight: "30px",
-          }}
-        ></Col>
+        <Col md={8} style={NAV_ITEM_STY}></Col>
       </Row>
 
       {/* Keep this floating button out from the nav bar section, bechause if we do backgrouroud blur in navbar section, the floating icons will disappear, thats why, i am puting this below */}
