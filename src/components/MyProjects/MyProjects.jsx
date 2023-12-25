@@ -1,5 +1,4 @@
 import { Col, Row, Tag } from "antd";
-import React from "react";
 import Container from "../Container/Container";
 
 const MyProjects = () => {

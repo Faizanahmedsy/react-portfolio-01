@@ -1,5 +1,4 @@
-import { Card, Col, Divider, Row, Typography } from "antd";
-import React from "react";
+import { Card, Col, Divider, Row } from "antd";
 import "./AboutMe.css";
 
 const AboutMe = () => {

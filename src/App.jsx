@@ -1,11 +1,11 @@
 import "./App.css";
-import About from "./components/About";
 import MyProjects from "./components/MyProjects/MyProjects";
 import Layout from "./components/HomePage/Layout";
 import NoPage from "./components/NoPage";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Blog from "./components/Blogs/Blog";
+import About from "./components/About/About";
 
 function App() {
   return (
